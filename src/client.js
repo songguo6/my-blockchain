@@ -104,7 +104,7 @@ function pendingCommand(vorpal){
 function peersCommand(vorpal){
   vorpal
     .command('peers', '查看P2P网络节点')
-    .action(function (args, callback) {
+    .action((args, callback) => {
       utils.formatLog(bc.peers);
       callback();
     });
@@ -113,15 +113,16 @@ function peersCommand(vorpal){
 function pubCommand(vorpal){
   vorpal
     .command('pub', '本地公钥(地址)')
-    .action(function (args, callback) {
+    .action((args, callback) => {
       this.log(cryptos.keys.pub);
       callback();
     });
 }
+
 function prvCommand(vorpal){
   vorpal
     .command('prv', '本地私钥')
-    .action(function (args, callback) {
+    .action((args, callback) => {
       this.log(cryptos.keys.prv);
       callback();
     })
