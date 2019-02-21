@@ -34,7 +34,6 @@
   sha256Hash(msg)           //获取SHA-256哈希值
 
 6.src/blockchain.js
-  
   init()                                        //初始化区块链
   bindProcessEvent()                            //绑定进程事件
   bindUdpEvent()                                //绑定UDP通信事件
