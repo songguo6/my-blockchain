@@ -125,5 +125,5 @@ function prvCommand(vorpal){
     .action((args, callback) => {
       this.log(cryptos.keys.prv);
       callback();
-    })
+    });
 }
